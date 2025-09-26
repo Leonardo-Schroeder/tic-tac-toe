@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-
 body {
     font-family: 'Roboto', sans-serif
 }
@@ -44,9 +43,8 @@ header h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 8rem;
-    margin-bottom: 2.5rem;
-    gap: 0.0001rem; /* Espaçamento entre os elementos */
+    margin-top: 6rem;
+    margin-bottom: 2rem;
 }
 
 footer {

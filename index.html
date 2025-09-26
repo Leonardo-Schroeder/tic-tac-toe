@@ -25,16 +25,18 @@
 
         <div class="players">
             <div class="player">
-                <h4>Jogador A:</h4>
                 <h4 id="playerA"></h4>
-                <h3 id="winsA">Vitórias: </h3>
+                <h3 id="winsA"></h3>
             </div>
             <h4>vs</h4>
             <div class="player">
-                 <h4>Jogador B:</h4>
+                <h3 id="winsB"></h3>
                 <h4 id="playerB"></h4>
-                <h3 id="winsB">Vitórias: </h3>
             </div>
+        </div>
+
+        <div class="turn">
+            <h3>Vez de: <p id="play-turn"></p></h3>
         </div>
 
         <div id="board" class="board" aria-label="Tabuleiro do Jogo da Velha">
@@ -52,13 +54,14 @@
         </div>
 
         <div class="controls">
-            <button id="reset">Reiniciar jogo</button>
+            <button id="reset" onclick="onClickReset()">Reiniciar jogo</button>
+            <button id="reset" onclick="onClickChangePlayers()">Trocar jogadores</button>
         </div>
     </main>
     <footer>
         <h4>Desenvolvido por Leonardo Bonfá Schroeder - RA: 289156</h4>
     </footer>
-    <script src="./JS/script.js" defer></script>
+    <script src="./JS/script.js"></script>
 </body>
 
 </html>
