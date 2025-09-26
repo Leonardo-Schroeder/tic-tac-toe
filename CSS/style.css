@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo dentro do header */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    /* Estilo */
+    background-color: #ffffff; /* Exemplo */
+    color: #0717f2; /* Exemplo */
+    padding: 0.2rem 0; /* Exemplo */
+    border-bottom: 0.2rem solid blue;
+}
+
+header h2 {
+    font-size: 2rem;
+}
+
+.header-composition {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 90%;
+    max-width: 1200px; 
+}
+
+.header-composition img {
+    height: 3rem;
+    object-fit: contain; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 2.5rem;
+    gap: 0.0001rem; /* Espaçamento entre os elementos */
+}
+
+footer {
+    /* Display conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Fixando Footer no fim da página */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    /* Estilo */
+    background-color: #0717f2; /* Exemplo */
+    color: white; /* Exemplo */
+    padding: 0.15rem 0; /* Exemplo */
+}

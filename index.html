@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/board.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-composition">
+            <img src="./Images/UNICAMP_logo.svg.png" alt="">
+            <h2>Jogo da Velha</h2>
+            <img src="./Images/af-logo-ft-reduzido-pos.png" alt="">
+        </div>
+    </header>
+    <main class="container">
+        <div id="status" class="status">Carregando...</div>
+
+        <div class="players">
+            <div class="player">
+                <h4>Jogador A:</h4>
+                <h4 id="playerA"></h4>
+                <h3 id="winsA">Vitórias: </h3>
+            </div>
+            <h4>vs</h4>
+            <div class="player">
+                 <h4>Jogador B:</h4>
+                <h4 id="playerB"></h4>
+                <h3 id="winsB">Vitórias: </h3>
+            </div>
+        </div>
+
+        <div id="board" class="board" aria-label="Tabuleiro do Jogo da Velha">
+            <button class="cell" data-index="0" aria-label="Célula 1"></button>
+            <button class="cell" data-index="1" aria-label="Célula 2"></button>
+            <button class="cell" data-index="2" aria-label="Célula 3"></button>
+
+            <button class="cell" data-index="3" aria-label="Célula 4"></button>
+            <button class="cell" data-index="4" aria-label="Célula 5"></button>
+            <button class="cell" data-index="5" aria-label="Célula 6"></button>
+
+            <button class="cell" data-index="6" aria-label="Célula 7"></button>
+            <button class="cell" data-index="7" aria-label="Célula 8"></button>
+            <button class="cell" data-index="8" aria-label="Célula 9"></button>
+        </div>
+
+        <div class="controls">
+            <button id="reset">Reiniciar jogo</button>
+        </div>
+    </main>
+    <footer>
+        <h4>Desenvolvido por Leonardo Bonfá Schroeder - RA: 289156</h4>
+    </footer>
+    <script src="./JS/script.js" defer></script>
+</body>
+
+</html>
