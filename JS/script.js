@@ -102,7 +102,6 @@ function checkResult() {
     // Vitória
     if (roundWon) {
         gameActive = false;
-        drawWinLine(winningLine);
 
         // Atualizar placar
         if (currentPlayer === 'X') {
@@ -128,56 +127,6 @@ function checkResult() {
     // Continuar jogo - mudar jogador
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
     updateTurn();
-}
-
-function drawWinLine(winningLine) {
-    const board = document.getElementById("board");
-    const line = document.createElement("div");
-    line.classList.add("win-line");
-
-    // Casos possíveis:
-    if (winningLine.toString() === "0,1,2") {
-        line.style.top = "16%";
-        line.style.left = "0";
-        line.style.width = "100%";
-    } else if (winningLine.toString() === "3,4,5") {
-        line.style.top = "50%";
-        line.style.left = "0";
-        line.style.width = "100%";
-    } else if (winningLine.toString() === "6,7,8") {
-        line.style.top = "83%";
-        line.style.left = "0";
-        line.style.width = "100%";
-    } else if (winningLine.toString() === "0,3,6") {
-        line.style.top = "0";
-        line.style.left = "16%";
-        line.style.height = "100%";
-        line.style.width = "5px";
-    } else if (winningLine.toString() === "1,4,7") {
-        line.style.top = "0";
-        line.style.left = "50%";
-        line.style.height = "100%";
-        line.style.width = "5px";
-    } else if (winningLine.toString() === "2,5,8") {
-        line.style.top = "0";
-        line.style.left = "83%";
-        line.style.height = "100%";
-        line.style.width = "5px";
-    } else if (winningLine.toString() === "0,4,8") {
-        line.style.top = "0";
-        line.style.left = "0";
-        line.style.width = "100%";
-        line.style.transform = "rotate(45deg)";
-        line.style.transformOrigin = "top left";
-    } else if (winningLine.toString() === "2,4,6") {
-        line.style.top = "0";
-        line.style.right = "0";
-        line.style.width = "100%";
-        line.style.transform = "rotate(-45deg)";
-        line.style.transformOrigin = "top right";
-    }
-
-    board.appendChild(line);
 }
 
 function updateTurn() {

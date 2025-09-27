@@ -39,7 +39,7 @@
             <h3>Vez de: <span id="play-turn"></span></h3>
         </div>
 
-        <div id="board" class="board" aria-label="Tabuleiro do Jogo da Velha">
+        <div id="board" class="board">
             <button class="cell" data-index="0" aria-label="Célula 1" onclick="onClickCell(0)"></button>
             <button class="cell" data-index="1" aria-label="Célula 2" onclick="onClickCell(1)"></button>
             <button class="cell" data-index="2" aria-label="Célula 3" onclick="onClickCell(2)"></button>
@@ -55,7 +55,7 @@
 
         <div class="controls">
             <button id="reset" onclick="onClickReset()">Reiniciar jogo</button>
-            <button id="reset" onclick="onClickChangePlayers()">Trocar jogadores</button>
+            <button id="reset-players" onclick="onClickChangePlayers()">Trocar jogadores</button>
         </div>
     </main>
     <footer>
