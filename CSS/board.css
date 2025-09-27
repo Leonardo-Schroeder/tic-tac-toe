@@ -1,12 +1,10 @@
-/* Tabuleiro */
-
 .board {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(3, 100px);
   gap: 8px;
   justify-content: center;
-  margin: 0.8rem 0;
 }
 
 .cell {
@@ -37,6 +35,7 @@
   font-weight: 700;
   color: #0717f2;
   text-align: center;
+  margin-top: 1rem;
 }
 
 /* Placar e jogadores */
@@ -53,7 +52,6 @@
   display: flex;
   flex-direction: center;
   align-items: center;
-
   gap: 1rem;
 }
 
@@ -75,6 +73,14 @@
   display: flex;
   gap: 0.15rem;
   margin: 0;
+}
+
+.win-line{
+  position: absolute;
+  background-color: rgb(9, 157, 36);
+  height: 5px;
+  border-radius: 0.5rem;
+  z-index: 1;
 }
 
 /* Botões de controle */
